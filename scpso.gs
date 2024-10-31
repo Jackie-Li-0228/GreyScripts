@@ -1,8 +1,7 @@
-if params.length != 3 or params[0]== "-h" or params[0]== "--help" then
-    print("Usage: ./scpso <host> <user> <password>");
+if params.len != 3 or params[0]== "-h" or params[0]== "--help" then
+    print("Usage: ./scpso <host> <user> <password>\n If <user> is 'guest', password can put whatever you like.");
     exit();
 end if
-cd("/lib/")
 shell = get_shell
 remoteshell = connect_service(shell,params[0],22,params[1],params[2])
 // 定义一个list，里面存放需要上传的so文件
