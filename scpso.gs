@@ -1,5 +1,5 @@
 if params.len != 3 or params[0]== "-h" or params[0]== "--help" then
-    print("Usage: ./scpso <host> <user> <password>\n If <user> is 'guest', password can put whatever you like.");
+    print("Usage: ./scpso <host> <user> <password>\nIf <user> is 'guest', password can put whatever you like.\nIf you have logged in as any user, you can set the host to 127.0.0.1.");
     exit();
 end if
 shell = get_shell
